@@ -1,55 +1,28 @@
 import React from "react";
 
+const determineActiveClass = (currentPage, pageName) =>
+  `nav-link ${currentPage === pageName ? "active" : ""}`;
+const pageName = ["About", "Projects", "Contact", "Resume"];
+
 function Header({ currentPage, handlePageChange }) {
   return (
     <header id="header">
       <h2 className="nav-title">Nina Siegel</h2>
       <nav className="nav-links">
         <ul>
-          <li className="nav-sections">
-            <a
-              href="#about"
-              onClick={() => handlePageChange("About")}
-              className={
-                currentPage === "About" ? "nav-link active" : "nav-link"
-              }
-            >
-              About
-            </a>
-          </li>
-          <li class="nav-sections">
-            <a
-              href="#projects"
-              onClick={() => handlePageChange("Projects")}
-              className={
-                currentPage === "Portfolio" ? "nav-link active" : "nav-link"
-              }
-            >
-              Portfolio
-            </a>
-          </li>
-          <li class="nav-sections">
-            <a
-              href="#contact"
-              onClick={() => handlePageChange("Contact")}
-              className={
-                currentPage === "Contact" ? "nav-link active" : "nav-link"
-              }
-            >
-              Contact
-            </a>
-          </li>
-          <li class="nav-sections">
-            <a
-              href="#resume"
-              onClick={() => handlePageChange("Resume")}
-              className={
-                currentPage === "Resume" ? "nav-link active" : "nav-link"
-              }
-            >
-              Resume
-            </a>
-          </li>
+          {pageName.map((name) => {
+            return (
+              <li className="nav-item">
+                <a
+                  href={`#{name}`}
+                  onClick={() => handlePageChange(name)}
+                  className={determineActiveClass(currentPage, name)}
+                >
+                  {name}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>
