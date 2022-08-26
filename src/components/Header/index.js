@@ -2,7 +2,7 @@ import React from "react";
 
 const determineActiveClass = (currentPage, pageName) =>
   `nav-link ${currentPage === pageName ? "active" : ""}`;
-const pageName = ["About", "Projects", "Contact", "Resume"];
+const pageName = ["About", "Projects", "Resume", "Contact"];
 
 function Header({ currentPage, handlePageChange }) {
   return (
