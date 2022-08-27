@@ -88,7 +88,7 @@ function Resume() {
               icon="cil:contact"
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
-              color="#2b2d2f"
+              color="#49382e"
               width="200"
               height="200"
             />

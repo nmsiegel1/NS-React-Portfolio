@@ -51,22 +51,22 @@ function Footer() {
             href={icon.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn contact-details"
+            className="btn contact-icons"
           >
             <Icon
               icon={icon.src}
-              color="lavenderblush"
+              color="#7dd181"
               width="40"
               height="40"
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
             />
-            {isHovering && <h4>{icon.alt}</h4>}
+            {/* {isHovering && <h4>{icon.alt}</h4>} */}
           </a>
         ))}
       </div>
-      <div className="contact-icons mb-2 text-left">
-        <h5 className="row">Nina Siegel</h5>
+      <div className="mb-2 mt-2">
+        <h5>Nina Siegel</h5>
         &copy; 2022
       </div>
     </footer>

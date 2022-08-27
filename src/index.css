@@ -1,18 +1,29 @@
 :root {
-  --background-color: rgb(211, 227, 240);
+  --background-color: #c9ffe2;
   --primary-text: rgb(91, 80, 76);
   --secondary-text: rgb(49, 49, 28);
-  --border-color: rgb(17, 60, 21, 1);
-  --hover-text: rgb(119, 156, 166, 0.45);
+  --border-color: #339989;
+  --hover-text: #b6f9c9;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Sora;
 }
 
-body {
+.active {
+  color: 7dd181;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: local("Sora"),
+    url("../src/assets/font/Sora-Regular.ttf") format("truetype");
+}
+
+main {
   color: var(--primary-color);
   font-family: Helvetica, Arial, sans-serif;
   background-color: var(--background-color);
@@ -21,29 +32,19 @@ body {
 /* Apply styles to header */
 header {
   padding: 20px 35px;
-  background-color: var(--background-color);
+  background-color: var(--hover-text);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  top: 0;
-  background-image: url("../src/assets/projects/Mountains.jpeg");
-  background-size: cover;
-  background-position: center;
-  position: -webkit-sticky;
-  position: sticky;
-  background-attachment: fixed;
-  background-position: 65%;
-  z-index: 9999;
 }
 
 .profile-pic {
-  background-image: url("../src/assets/projects/Mountains.jpeg");
-  background-position: 50%;
-  background-size: cover;
+  width: 75%;
+  height: 75%;
 }
 
-header h1 {
-  font-weight: bold;
+header h2 {
+  /* font-weight: bold; */
   font-size: 36px;
   color: var(--secondary-text);
   margin: 0;
@@ -66,7 +67,7 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li a,
+.nav-links,
 footer nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
@@ -143,6 +144,10 @@ header nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover {
+  box-shadow: 0 0 10px rgba(125, 209, 129, 0.2);
+}
+
 .card-img-top {
   width: 100%;
   height: 15vw;
@@ -188,6 +193,7 @@ footer h2 {
 
 .contact-icons:hover {
   color: rgb(0, 123, 255, 0.25);
+  box-shadow: 5px 10px;
 }
 
 .fa-linkedin {
@@ -204,8 +210,24 @@ footer h2 {
 
 .links {
   text-decoration: none;
+  padding: 10px 15px;
 }
 
+.links:hover {
+  color: #7dd181;
+}
+
+.contact-me {
+  text-decoration: none;
+  color: #7dd181;
+}
+
+.contact-div {
+  background-color: var(--hover-text);
+  width: 80%;
+  height: 20%;
+  padding: 5px;
+}
 /* media query for 980px and smaller */
 @media screen and (min-width: 1300px) {
   .hero {

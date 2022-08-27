@@ -1,13 +1,19 @@
 import React from "react";
+import profilePic from "../../assets/projects/Mountains.jpeg";
 
 function About() {
   return (
     <section className="container">
-      <h1 id="about">Nina Siegel</h1>
-      <h3 className="pb-3">Chef Turned Coder</h3>
+      <h3 className="p-3">Hi I'm Nina, a chef turned coder!</h3>
       <div className="row">
-        <div className="col-6 profile-pic"></div>
-        <div className="col-6">
+        <div className="col-xs-12 col-md-6">
+          <img
+            className="profile-pic align-items-center"
+            src={profilePic}
+            alt="Nina Siegel"
+          ></img>
+        </div>
+        <div className="col-xs-12 col-md-6">
           <p m-2>
             Full stack web developer and chef experienced in making and shipping
             code and sandwiches in an agile environment. After nearly a decade

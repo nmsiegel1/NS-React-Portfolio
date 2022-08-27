@@ -1,24 +1,24 @@
 import React from "react";
 
 const determineActiveClass = (currentPage, pageName) =>
-  `nav-link ${currentPage === pageName ? "active" : ""}`;
+  `nav-link ${currentPage === pageName ? "active" : "nav-link"}`;
 const pageName = ["About", "Projects", "Resume", "Contact"];
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <header id="header">
-      <h2 className="nav-title">Nina Siegel</h2>
-      <nav className="nav-links">
+    <header className="d-flex align-items-center" id="header">
+      <h2>Nina Siegel</h2>
+      <nav>
         <ul>
-          {pageName.map((name) => {
+          {pageName.map((pageName) => {
             return (
-              <li className="nav-item">
+              <li className="links">
                 <a
-                  href={`#{name}`}
-                  onClick={() => handlePageChange(name)}
-                  className={determineActiveClass(currentPage, name)}
+                  href={`#{pageName}`}
+                  onClick={() => handlePageChange(pageName)}
+                  className={determineActiveClass(currentPage, pageName)}
                 >
-                  {name}
+                  {pageName}
                 </a>
               </li>
             );
