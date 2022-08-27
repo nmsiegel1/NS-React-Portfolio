@@ -143,12 +143,7 @@ header nav ul li a:hover {
 }
 
 .btn {
-  border-radius: 2em;
-  background-color: teal;
-  color: #ffffff;
-  padding: 0.5em 1.5em;
-  text-align: center;
-  margin: 5px;
+  margin: 3px 10px 3px 10px;
 }
 .card .btn:hover {
   background-color: rgba(0, 128, 128, 0.7);
@@ -199,7 +194,7 @@ footer h2 {
   opacity: 0.7;
 }
 
-.icons:hover {
+.contact-icons:hover {
   color: rgb(0, 123, 255, 0.25);
 }
 

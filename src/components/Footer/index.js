@@ -39,16 +39,13 @@ function Footer() {
   };
 
   return (
-    <footer
-      className="contact-links d-flex flex-column align-items-center"
-      id="footer"
-    >
-      <div class="contacts">
+    <footer className="" id="footer">
+      {/* <div class="contacts">
         <h3 class="section-title" id="contact-me">
           Contact Me
         </h3>
-      </div>
-      <div>
+      </div> */}
+      <div className="d-flex justify-content-around mx-20">
         {contactIcons.map((icon) => (
           <a
             href={icon.href}
@@ -61,13 +58,15 @@ function Footer() {
               color="lavenderblush"
               width="40"
               height="40"
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
             />
-            {/* {isHovering && <h4>{icon.alt}</h4>} */}
+            {isHovering && <h4>{icon.alt}</h4>}
           </a>
         ))}
       </div>
-      <div className="mb-3 text-center">
-        <h5 className="footer-name row">Nina Siegel</h5>
+      <div className="contact-icons mb-2 text-left">
+        <h5 className="row">Nina Siegel</h5>
         &copy; 2022
       </div>
     </footer>
