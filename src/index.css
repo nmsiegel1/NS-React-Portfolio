@@ -115,8 +115,10 @@ header nav ul li a:hover {
   scroll-margin-top: 8rem;
 }
 
-.skill-icons {
+.skill-icons img {
   margin: 5px;
+  height: 100px;
+  width: 100px;
 }
 
 .contacts {
@@ -211,6 +213,10 @@ footer h2 {
 
 .icons {
   color: lavenderblush;
+}
+
+.links {
+  text-decoration: none;
 }
 
 /* media query for 980px and smaller */

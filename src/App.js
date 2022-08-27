@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -11,6 +12,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState("About");
 
   const Page = () => {
+    // eslint-disable-next-line default-case
     switch (currentPage) {
       case "About":
         return <About />;
@@ -27,6 +29,7 @@ function App() {
   return (
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Hero />
       <main>
         <Page />
       </main>

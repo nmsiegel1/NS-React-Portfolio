@@ -1,77 +1,113 @@
-import React from "react";
+import React, { useState } from "react";
+import { Icon } from "@iconify/react";
 
 function Resume() {
+  const skillIcons = [
+    {
+      name: "HTML",
+      src: "icomoon-free:html-five2",
+      alt: "HTML",
+    },
+    {
+      name: "CSS",
+      src: "cib:css3-shiled",
+      alt: "CSS",
+    },
+    {
+      name: "JavaScript",
+      src: "akar-icons:javascript-fill",
+      alt: "JavaScript",
+    },
+    {
+      name: "Git",
+      src: "bxl:git",
+      alt: "Git",
+    },
+    {
+      name: "Node.Js",
+      src: "fa-brands:node",
+      alt: "Node.Js",
+    },
+    {
+      name: "React",
+      src: "akar-icons:react-fill",
+      alt: "React",
+    },
+    {
+      name: "Bootstrap",
+      src: "akar-icons:bootstrap-fill",
+      alt: "Bootstrap",
+    },
+    {
+      name: "MySQL",
+      src: "fontisto:mysql",
+      alt: "MySQL",
+    },
+    {
+      name: "Sequelize",
+      src: "file-icons:sequelize",
+      alt: "Sequelize",
+    },
+    {
+      name: "MongoDB",
+      src: "bxl:mongodb",
+      alt: "MongoDB",
+    },
+    {
+      name: "Handlebars.js",
+      src: "logos:handlebars",
+      alt: "Handlebars.js",
+    },
+    {
+      name: "jQuery",
+      src: "bxl:jquery",
+      alt: "jQuery",
+    },
+  ];
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
+
   return (
-    <section className="container mt-5 mb-5">
-      <h2 className="row mb-3">Resume and Skills</h2>
-      <div className="row d-flex justify-content-center">
-        <section class="row p-4">
-          <div class="col-12 col-md-3 mt-2">
-            <h3 class="section-title">Skills</h3>
-          </div>
-          <div class="col-12 col-md-9 mb-2">
-            <img
-              src="./assets/Icons/html.png"
-              alt="html"
-              class="col-2 skill-icons"
-            />
-            <img
-              src="./assets/Icons/css.png"
-              alt="css"
-              class="col-2 skill-icons"
-            />
-            <img
-              src="./assets/Icons/javascript.png"
-              alt="javascript"
-              class="col-2 skill-icons"
-            />
-            <img
-              src="./assets/Icons/git.png"
-              alt="git"
-              class="col-2 skill-icons"
-            />
-            <img
-              src="./assets/Icons/nodejs.png"
-              alt="nodejs"
-              class="col-2 skill-icons"
+    <section className="container">
+      <div className="row p-4">
+        <h2 className="col-12 font-weight-bold">Resume:</h2>
+        <div className="col-12 d-flex justify-content-center border-bottom p-4">
+          <a
+            href="https://drive.google.com/file/d/1mNBA36PA3K8fG-fkU3Upj5m3bFQbkIGx/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon
+              icon="cil:contact"
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+              color="#2b2d2f"
+              width="200"
+              height="200"
             />
 
-            <img
-              src="./assets/Icons/bootstrap.png"
-              alt="bootstrap"
-              class="col-2 skill-icons"
-            />
-
-            <img
-              src="./assets/Icons/mysql.png"
-              alt="mysql"
-              class="col-2 skill-icons"
-            />
-            <img
-              src="./assets/Icons/sequelize.png"
-              alt="sequelize"
-              class="col-2 skill-icons"
-            />
-            <img
-              src="./assets/Icons/handlebars.png"
-              alt="handlebars"
-              class="col-2 skill-icons"
-            />
-            <img
-              src="./assets/Icons/jquery.png"
-              alt="jquery"
-              class="col-2 skill-icons"
-            />
-          </div>
-        </section>
+            {isHovering && <h4 className="links text-center">My Resume</h4>}
+          </a>
+        </div>
       </div>
-      <a
-        href="https://drive.google.com/file/d/1dIVSiLYyY9As86QRA5tKUVNMy-kJP1ug/view?usp=sharing"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Resume
-      </a>
+      <div>
+        <div className="row p-4">
+          <h2 className="col-12 mb-4 font-weight-bold">Skills:</h2>
+          {skillIcons.map((icon) => (
+            <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
+              <Icon icon={icon.src} color="#2b2d2f" width="75" height="75" />
+              <h5>{icon.name}</h5>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

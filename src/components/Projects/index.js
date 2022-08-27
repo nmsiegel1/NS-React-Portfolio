@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card";
+import ProjectCard from "../Card";
 import sipHappens from "../../assets/projects/siphappens2.png";
 
 const Projects = () => {
@@ -63,7 +63,7 @@ const Projects = () => {
   return (
     <main>
       {projects.map((project) => (
-        <Card project={project} />
+        <ProjectCard project={project} />
       ))}
     </main>
   );
