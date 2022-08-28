@@ -93,9 +93,12 @@ function Resume() {
               color="#2b2d2f"
               width="200"
               height="200"
+              className="resume-icon p-2 rounded"
             />
 
-            {isHovering && <h4 className="links text-center">My Resume</h4>}
+            {isHovering && (
+              <h4 className="links text-center mt-4">My Resume</h4>
+            )}
           </a>
         </div>
       </div>

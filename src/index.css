@@ -1,9 +1,16 @@
 :root {
-  --background-color: #c9ffe2;
-  --primary-text: rgb(91, 80, 76);
-  --secondary-text: rgb(49, 49, 28);
-  --border-color: #339989;
-  --hover-text: #b6f9c9;
+  --primary-color: #c9ffe2;
+  --secondary-color: #b6f9c9;
+  --tertiary-color: #57cc99;
+  --quat-color: #38a3a5;
+  --quint-color: #22577a;
+  --sext-color: #7dd181;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: local("Sora"),
+    url("../src/assets/font/Sora-Regular.ttf") format("truetype");
 }
 
 * {
@@ -13,55 +20,30 @@
   font-family: Sora;
 }
 
-.active {
-  color: 7dd181;
-}
-
-@font-face {
-  font-family: "Sora";
-  src: local("Sora"),
-    url("../src/assets/font/Sora-Regular.ttf") format("truetype");
-}
-
 main {
   color: var(--primary-color);
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
 }
 
-/* Apply styles to header */
+/* Header styles */
 header {
   padding: 20px 35px;
-  background-color: var(--hover-text);
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.profile-pic {
-  width: 75%;
-  height: 75%;
-  margin: 3rem;
-}
-
-.resume {
-  border-bottom: 3px solid #7dd181;
-}
-
 header h2 {
-  /* font-weight: bold; */
   font-size: 36px;
-  color: var(--secondary-text);
+  color: var(--quat-color);
   margin: 0;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--secondary-text);
 }
 
 header nav {
   margin: 7px 0;
+  text-decoration: none;
+  color: var(--quat-color);
 }
 
 header nav ul {
@@ -72,190 +54,76 @@ header nav ul {
   list-style: none;
 }
 
-.nav-links,
-footer nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-}
-
-header nav ul li a:hover {
-  background-color: var(--hover-text);
-}
-
-/* Apply styles to Hero */
-.hero {
-  background-image: url("../src/assets/projects/Mountains.jpeg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  background-attachment: fixed;
-  background-position: 50%;
-  padding: 20px;
-  height: 800px;
-}
-
-.subtitle {
-  border: 3px solid var(--border-color);
-  background-color: var(--border-color);
-  padding: 5px;
-  width: auto;
-  border-radius: 7px;
-  font-size: 25px;
-  justify-content: flex-end;
-  color: white;
-}
-
-/* Bio section begins  */
-.section-title {
-  font-size: 40px;
-  scroll-margin-top: 8rem;
-}
-
-.skill-icons img {
-  margin: 5px;
-  height: 100px;
-  width: 100px;
-}
-
-.contacts {
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.card {
-  margin-top: 2em;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.card-title {
-  font-weight: 700;
-  font-size: 1.5em;
-}
-
-.card img {
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn {
-  margin: 3px 10px 3px 10px;
-}
-.card .btn:hover {
-  background-color: rgba(0, 128, 128, 0.7);
-  color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn:hover {
-  box-shadow: 0 0 10px rgba(125, 209, 129, 0.2);
-}
-
-.card-img-top {
-  width: 100%;
-  height: 15vw;
-}
-
-.card-deck,
-.bio {
-  margin-left: 0px;
-}
-
-.container-fluid {
-  width: 95%;
-  margin: 25px;
-}
-
-/* Footer/Contact me section begins */
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--hover-text);
-  padding-top: 7px;
-}
-
-footer nav ul {
-  margin: 7px 0;
-  display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-footer h2 {
-  font-size: 35px;
-  text-align: center;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.contact-icons:hover {
-  color: rgb(0, 123, 255, 0.25);
-  box-shadow: 5px 10px;
-}
-
-.fa-linkedin {
-  color: #0e76a8;
-}
-
-.fa-github {
-  color: #171515;
-}
-
-.icons {
-  color: lavenderblush;
-}
-
 .links {
   text-decoration: none;
   padding: 10px 15px;
 }
 
 .links:hover {
-  color: #7dd181;
+  color: var(--sext-color);
 }
 
-.contact-me {
-  text-decoration: none;
-  color: #7dd181;
+/* Footer styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  padding-top: 7px;
+  color: var(--quat-color);
 }
 
-.contact-div {
-  background-color: var(--hover-text);
-  height: 20%;
-  padding: 5px;
+.contact-icons {
+  margin: 3px 10px 3px 10px;
+  color: var(--quat-color);
+}
+.contact-icons:hover {
+  box-shadow: 0 0 5px 5px var(--quat-color);
+}
+
+/* About styles */
+.profile-pic {
+  width: 75%;
+  height: 75%;
+  margin: 3rem;
 }
 
 .about-div {
-  background-color: var(--hover-text);
+  background-color: var(--secondary-color);
   height: 50%;
   padding: 5px;
+  color: var(--quat-color);
 }
 
+.intro {
+  color: var(--quint-color);
+}
+
+/* portfolio styles */
 .project-div {
-  background-color: #38a3a5;
+  background-color: var(--quat-color);
   flex: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 30px;
+  border: var(--quint-color) solid 5px;
 }
+
 .photo-div,
 .project-text {
   flex: 45%;
 }
+
 .project-img {
-  height: 400px;
-  border: var black solid 2px;
+  height: 300px;
+  border: var(--quint-color) solid 3px;
   margin: 25px;
+}
+.project-img:hover {
+  box-shadow: 0 0 10px 10px var(--secondary-color);
 }
 
 .project-text {
@@ -265,6 +133,7 @@ footer h2 {
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  color: var(--secondary-color);
 }
 
 .project-text h2 {
@@ -283,25 +152,47 @@ footer h2 {
   line-height: 1.25;
 }
 .github:hover {
-  color: #339989;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px var(--secondary-color);
 }
+
+/* resume styles */
+.resume {
+  border-bottom: 3px solid var(--sext-color);
+}
+
+.resume h4 {
+  color: #38a3a5;
+  text-decoration: none;
+}
+
+.resume-icon:hover {
+  box-shadow: 0 0 5px 5px var(--quat-color);
+}
+
+/* contact styles */
+.contact-me {
+  text-decoration: none;
+  color: var(--sext-color);
+}
+
+.contact-me:hover {
+  color: var(--quint-color);
+}
+
+.contact-div {
+  background-color: var(--secondary-color);
+  height: 20%;
+  padding: 5px;
+}
+
 /* media query for 980px and smaller */
 @media screen and (min-width: 1300px) {
-  .hero {
-    padding: 20px;
-    height: 800px;
-  }
-
   header h1 {
     font-size: 50px;
   }
 
   header ul li a {
-    font-size: 25px;
-  }
-
-  .bio {
     font-size: 25px;
   }
 }
@@ -326,7 +217,4 @@ footer h2 {
 
 /* mediaquery for tablets and smaller styles for screens 768px and smaller */
 @media screen and (max-width: 768px) {
-  .hero {
-    height: 700px;
-  }
 }

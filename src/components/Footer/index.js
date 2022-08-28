@@ -40,11 +40,6 @@ function Footer() {
 
   return (
     <footer className="" id="footer">
-      {/* <div class="contacts">
-        <h3 class="section-title" id="contact-me">
-          Contact Me
-        </h3>
-      </div> */}
       <div className="d-flex justify-content-around mx-20">
         {contactIcons.map((icon) => (
           <a
@@ -53,15 +48,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="btn contact-icons"
           >
-            <Icon
-              icon={icon.src}
-              color="#7dd181"
-              width="40"
-              height="40"
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
-            />
-            {/* {isHovering && <h4>{icon.alt}</h4>} */}
+            <Icon icon={icon.src} color="#7dd181" width="40" height="40" />
           </a>
         ))}
       </div>

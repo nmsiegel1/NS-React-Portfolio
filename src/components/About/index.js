@@ -4,7 +4,7 @@ import profilePic from "../../assets/projects/Mountains.jpeg";
 function About() {
   return (
     <section className="container">
-      <h3 className="p-3">Hi I'm Nina, a chef turned coder!</h3>
+      <h3 className="p-3 intro">Hi I'm Nina, a chef turned coder!</h3>
       <div className="row">
         <div className="col-xs-12 col-md-6">
           <img
