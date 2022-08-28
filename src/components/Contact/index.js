@@ -42,7 +42,9 @@ function Contact() {
     <section className="container">
       <div className="row">
         <div className="col-xs-12 col-md-8 mb-4">
-          <h2 className="p-4">Contact me</h2>
+          <h2 className="p-4">
+            <u>Contact me</u>
+          </h2>
           <Form
             id="contact-form"
             className="container mx-5"
@@ -87,10 +89,10 @@ function Contact() {
             </Button>
           </Form>
         </div>
-        <div className="col-xs-12 col-md-4 contact-div rounded d-flex align-self-center">
+        <div className="col-xs-12 col-md-4 contact-div rounded d-flex align-items-center">
           <p>
             I'd love to hear from you! I am eager to join a collaborative team
-            where I can continue honing my skills. Please fill out the form or
+            where I can continue honing my skills. Please fill out this form or
             email me at{" "}
             <a
               href="mailto: siegel.nina.m@gmail.com"
@@ -100,7 +102,7 @@ function Contact() {
             >
               siegel.nina.m@gmail.com
             </a>
-            . Want to see more? Visit{" "}
+            . Want to see more? Checkout my GitHub{" "}
             <a
               href="https://github.com/nmsiegel1"
               target="_blank"
@@ -109,7 +111,6 @@ function Contact() {
             >
               nmsiegel1
             </a>{" "}
-            on GitHub.
           </p>
         </div>
       </div>

@@ -77,8 +77,10 @@ function Resume() {
   return (
     <section className="container">
       <div className="row p-4">
-        <h2 className="col-12 font-weight-bold">Resume:</h2>
-        <div className="col-12 d-flex justify-content-center border-bottom p-4">
+        <h2 className="col-12 font-weight-bold ">
+          <u>Resume</u>
+        </h2>
+        <div className="col-12 d-flex justify-content-center resume p-4">
           <a
             href="https://drive.google.com/file/d/1mNBA36PA3K8fG-fkU3Upj5m3bFQbkIGx/view?usp=sharing"
             target="_blank"
@@ -88,7 +90,7 @@ function Resume() {
               icon="cil:contact"
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
-              color="#49382e"
+              color="#2b2d2f"
               width="200"
               height="200"
             />
@@ -99,7 +101,9 @@ function Resume() {
       </div>
       <div>
         <div className="row p-4">
-          <h2 className="col-12 mb-4 font-weight-bold">Skills:</h2>
+          <h2 className="col-12 mb-4 font-weight-bold">
+            <u>Skills</u>
+          </h2>
           {skillIcons.map((icon) => (
             <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
               <Icon icon={icon.src} color="#2b2d2f" width="75" height="75" />

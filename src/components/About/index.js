@@ -8,13 +8,13 @@ function About() {
       <div className="row">
         <div className="col-xs-12 col-md-6">
           <img
-            className="profile-pic align-items-center"
+            className="profile-pic align-self-center rounded justify-content-center"
             src={profilePic}
             alt="Nina Siegel"
           ></img>
         </div>
-        <div className="col-xs-12 col-md-6">
-          <p m-2>
+        <div className="col-xs-12 col-md-6 about-div rounded d-flex align-self-center mt-5">
+          <p>
             Full stack web developer and chef experienced in making and shipping
             code and sandwiches in an agile environment. After nearly a decade
             in food service I'm transitioning into tech after completing a
