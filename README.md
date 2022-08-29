@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Nina Siegel React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This is the porfolio site made with React to showcase work samples to a potential employer. This is a single page application with "About me", "Portfolio", "Resume and Skills" and "Contact" sections that are each rendered after selecting the appropriate link in the header.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Made-With](#Made-with)
+- [Install](#Install)
+- [Notes](#Notes)
+- [Application](#Application)
+- [Screenshots](#Screenshots)
+- [Liscense](#Liscense)
+- [Credits](#Credits)
+- [Questions](#Questions)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Made-With
 
-### `npm test`
+- React
+- create-react-app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Packages/Extras
 
-### `npm run build`
+- React-Bootstrap
+- EmailJS
+- Iconify
+- gh-pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After cloning the repo, run "npm i" or "npm install" in the command line to install dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Notes
 
-### `npm run eject`
+- This applicaiton can be viewed thorough the deployed link or cloned from the repo and used locally.
+- To use the application locally, run npm start after cloning the repo and installing necessary dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Application
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+About me
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="1142" alt="Screen Shot 2022-08-29 at 10 34 10 AM" src="https://user-images.githubusercontent.com/102773691/187226564-b4d7eead-f4c7-4616-ae27-90e3790554c9.png">
 
-## Learn More
+Porfolio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img width="917" alt="Screen Shot 2022-08-29 at 10 34 42 AM" src="https://user-images.githubusercontent.com/102773691/187226581-d481f7e8-6756-4a1f-8315-cbef349fd72f.png">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Resume and Skills
 
-### Code Splitting
+<img width="1075" alt="Screen Shot 2022-08-29 at 10 35 06 AM" src="https://user-images.githubusercontent.com/102773691/187226589-7b66fc28-2a73-43d6-a515-fb4fea787e5c.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contact
 
-### Analyzing the Bundle Size
+<img width="1096" alt="Screen Shot 2022-08-29 at 10 35 16 AM" src="https://user-images.githubusercontent.com/102773691/187226617-0d569c2a-7e2d-4097-a2e0-c39d1a7e7c98.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Liscense
 
-### Making a Progressive Web App
+This project is liscensed under the MIT liscense.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Credits
 
-### Advanced Configuration
+Made by Nina Siegel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Questions
 
-### Deployment
+For questions, email me at siegel.nina.m@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To see more of my work visit https://github.com/nmsiegel1/
