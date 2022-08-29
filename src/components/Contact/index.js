@@ -1,42 +1,76 @@
 import React, { useState } from "react";
+import emailjs, { init } from "@emailjs/browser";
 import { validateEmail } from "../../utils/helpers";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+init(process.env.REACT_APP_USER_ID);
 
 function Contact() {
-  const [errorMessage, setErrorMessage] = useState("");
   const [formState, setFormState] = useState({
     name: "",
     email: "",
     message: "",
   });
-
   const { name, email, message } = formState;
+  const [errorMessage, setErrorMessage] = useState("");
 
-  function handleChange(e) {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
+  function handleChange(event) {
+    if (event.target.name === "email") {
+      const isValid = validateEmail(event.target.value);
       if (!isValid) {
-        setErrorMessage("Your email is invalid");
+        setErrorMessage("Your email is invalid.");
       } else {
         setErrorMessage("");
       }
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+      if (!event.target.value.length) {
+        setErrorMessage(`${event.target.name} is required.`);
       } else {
         setErrorMessage("");
       }
     }
     if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
+      setFormState({ ...formState, [event.target.name]: event.target.value });
     }
   }
-
-  function handleSubmit(e) {
-    e.preventDefault();
+  function handleSubmit(event) {
+    event.preventDefault();
     console.log(formState);
   }
+
+  const [nameEJS, setName] = useState("");
+  const [emailEJS, setEmail] = useState("");
+  const [messageEJS, setMessage] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
+
+  const submit = () => {
+    if (nameEJS && emailEJS && messageEJS) {
+      const serviceId = "service_m1r31zs";
+      const templateId = "template_qz58mwb";
+      const userId = "QeEdti2xaaRq_5ozI";
+
+      const templateParams = {
+        nameEJS,
+        emailEJS,
+        messageEJS,
+      };
+      emailjs
+        .send(serviceId, templateId, templateParams, userId)
+        .then((response) => console.log(response))
+        .then((error) => console.log(error));
+
+      setName("");
+      setEmail("");
+      setMessage("");
+      setEmailSent(true);
+      setIsVisible(true);
+      console.log("Email sent!");
+    } else {
+      alert("Please fill in all fields.");
+    }
+  };
+
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <section className="container">
@@ -58,8 +92,10 @@ function Contact() {
               <Form.Control
                 type="text"
                 name="name"
-                defaultValue={name}
+                placeholder="Name"
                 onBlur={handleChange}
+                value={nameEJS}
+                onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="m-3">
@@ -67,8 +103,10 @@ function Contact() {
               <Form.Control
                 type="email"
                 name="email"
-                defaultValue={email}
+                placeholder="Email"
                 onBlur={handleChange}
+                value={emailEJS}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="m-3">
@@ -79,20 +117,27 @@ function Contact() {
                 as="textarea"
                 name="message"
                 rows="5"
-                defaultValue={message}
+                placeholder="your message here..."
                 onBlur={handleChange}
+                value={messageEJS}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </Form.Group>
+
             {errorMessage && (
               <div>
                 <p className="error-text">{errorMessage}</p>
               </div>
             )}
-            <Button variant="outline-success" type="submit">
+            <Button variant="outline-success" type="submit" onClick={submit}>
               Submit
             </Button>
           </Form>
+          {isVisible && emailSent && (
+            <span>Thanks for your message! I'll be in touch soon!</span>
+          )}
         </div>
+
         <div className="col-xs-12 col-md-4 contact-div rounded mt-5 d-flex align-items-center">
           <p>
             I'd love to hear from you! I am eager to join a collaborative team
