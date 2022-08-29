@@ -41,15 +41,17 @@ function Contact() {
   return (
     <section className="container">
       <div className="row">
-        <div className="col-xs-12 col-md-8 mb-4">
-          <h2 className="p-4">
+        <div>
+          <h2 className="title m-5">
             <u>Contact me</u>
           </h2>
+        </div>
+        <div className="col-xs-12 col-md-8 mb-4">
           <Form
             id="contact-form"
             className="container mx-5"
             onSubmit={handleSubmit}
-            style={{ width: "80%" }}
+            style={{ width: "80%", color: "var(--quint-color)" }}
           >
             <Form.Group className="m-3">
               <Form.Label htmlFor="name">Name:</Form.Label>
@@ -70,7 +72,9 @@ function Contact() {
               />
             </Form.Group>
             <Form.Group className="m-3">
-              <Form.Label htmlFor="message">Message:</Form.Label>
+              <Form.Label className="form" htmlFor="message">
+                Message:
+              </Form.Label>
               <Form.Control
                 as="textarea"
                 name="message"
@@ -89,7 +93,7 @@ function Contact() {
             </Button>
           </Form>
         </div>
-        <div className="col-xs-12 col-md-4 contact-div rounded d-flex align-items-center">
+        <div className="col-xs-12 col-md-4 contact-div rounded mt-5 d-flex align-items-center">
           <p>
             I'd love to hear from you! I am eager to join a collaborative team
             where I can continue honing my skills. Please fill out this form or

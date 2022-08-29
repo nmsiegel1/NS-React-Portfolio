@@ -29,6 +29,11 @@ function Resume() {
       alt: "Node.Js",
     },
     {
+      name: "Express.js",
+      src: "simple-icons:express",
+      alt: "Express.js",
+    },
+    {
       name: "React",
       src: "akar-icons:react-fill",
       alt: "React",
@@ -63,6 +68,21 @@ function Resume() {
       src: "bxl:jquery",
       alt: "jQuery",
     },
+    {
+      name: "Heroku",
+      src: "bxl:heroku",
+      alt: "Heroku",
+    },
+    {
+      name: "API",
+      src: "carbon:api",
+      alt: "API",
+    },
+    {
+      name: "REST API",
+      src: "dashicons:rest-api",
+      alt: "REST API",
+    },
   ];
   const [isHovering, setIsHovering] = useState(false);
 
@@ -77,7 +97,7 @@ function Resume() {
   return (
     <section className="container">
       <div className="row p-4">
-        <h2 className="col-12 font-weight-bold ">
+        <h2 className="title col-12 m-5 font-weight-bold ">
           <u>Resume</u>
         </h2>
         <div className="col-12 d-flex justify-content-center resume p-4">
@@ -90,7 +110,7 @@ function Resume() {
               icon="cil:contact"
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
-              color="#2b2d2f"
+              color="#22577a"
               width="200"
               height="200"
               className="resume-icon p-2 rounded"
@@ -104,13 +124,13 @@ function Resume() {
       </div>
       <div>
         <div className="row p-4">
-          <h2 className="col-12 mb-4 font-weight-bold">
+          <h2 className="title col-12 m-5 font-weight-bold">
             <u>Skills</u>
           </h2>
           {skillIcons.map((icon) => (
             <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
-              <Icon icon={icon.src} color="#2b2d2f" width="75" height="75" />
-              <h5>{icon.name}</h5>
+              <Icon icon={icon.src} color="#22577a" width="75" height="75" />
+              <h5 className="skills">{icon.name}</h5>
             </div>
           ))}
         </div>

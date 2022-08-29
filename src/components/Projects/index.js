@@ -63,6 +63,11 @@ const Projects = () => {
     <main>
       <div className="container">
         <div className="row">
+          <h2 className="title m-5 font-weight-bold">
+            <u>My Portfolio</u>
+          </h2>
+        </div>
+        <div className="row">
           {projects.map((project) => (
             <div className="col-xs-12 col-lg-6">
               <ProjectCard project={project} />

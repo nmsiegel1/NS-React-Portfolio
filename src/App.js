@@ -15,11 +15,11 @@ function App() {
     switch (currentPage) {
       case "About":
         return <About />;
-      case "Projects":
+      case "Portfolio":
         return <Projects />;
       case "Contact":
         return <Contact />;
-      case "Resume":
+      case "Resume & Skills":
         return <Resume />;
     }
   };

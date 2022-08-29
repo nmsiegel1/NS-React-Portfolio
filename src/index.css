@@ -76,10 +76,10 @@ footer {
 
 .contact-icons {
   margin: 3px 10px 3px 10px;
-  color: var(--quat-color);
+  color: var(--sext-color);
 }
 .contact-icons:hover {
-  box-shadow: 0 0 5px 5px var(--quat-color);
+  box-shadow: 0 0 5px 5px var(--sext-color);
 }
 
 /* About styles */
@@ -92,8 +92,9 @@ footer {
 .about-div {
   background-color: var(--secondary-color);
   height: 50%;
-  padding: 5px;
+  padding: 1rem;
   color: var(--quat-color);
+  margin-top: 3rem;
 }
 
 .intro {
@@ -162,15 +163,23 @@ footer {
 }
 
 .resume h4 {
-  color: #38a3a5;
+  color: var(--quint-color);
   text-decoration: none;
 }
 
 .resume-icon:hover {
-  box-shadow: 0 0 5px 5px var(--quat-color);
+  box-shadow: 0 0 5px 5px var(--quint-color);
+}
+
+.skills {
+  color: var(--quint-color);
+  font-size: 15px;
 }
 
 /* contact styles */
+.title {
+  color: var(--quint-color);
+}
 .contact-me {
   text-decoration: none;
   color: var(--sext-color);
@@ -184,6 +193,8 @@ footer {
   background-color: var(--secondary-color);
   height: 20%;
   padding: 5px;
+  color: var(--quat-color);
+  border: var(--quint-color) solid 5px;
 }
 
 /* media query for 980px and smaller */
@@ -194,6 +205,10 @@ footer {
 
   header ul li a {
     font-size: 25px;
+  }
+
+  .about-div {
+    margin-top: 4rem;
   }
 }
 
@@ -217,4 +232,7 @@ footer {
 
 /* mediaquery for tablets and smaller styles for screens 768px and smaller */
 @media screen and (max-width: 768px) {
+  .contact-div {
+    margin-bottom: 3rem;
+  }
 }

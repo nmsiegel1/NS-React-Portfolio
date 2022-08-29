@@ -4,7 +4,9 @@ import profilePic from "../../assets/projects/Mountains.jpeg";
 function About() {
   return (
     <section className="container">
-      <h3 className="p-3 intro">Hi I'm Nina, a chef turned coder!</h3>
+      <div className="row">
+        <h3 className="mt-5 mb-3 intro">Hi I'm Nina, a chef turned coder!</h3>
+      </div>
       <div className="row">
         <div className="col-xs-12 col-md-6">
           <img
@@ -13,7 +15,7 @@ function About() {
             alt="Nina Siegel"
           ></img>
         </div>
-        <div className="col-xs-12 col-md-6 about-div rounded d-flex align-self-center mt-5">
+        <div className="col-xs-12 col-md-6 about-div rounded d-flex align-self-center">
           <p>
             Full stack web developer and chef experienced in making and shipping
             code and sandwiches in an agile environment. After nearly a decade
