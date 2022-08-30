@@ -4,6 +4,7 @@ import handlebarsIcon from "../../assets/HandlebarsIcon.png";
 import mongoose from "../../assets/mongoose.png";
 
 function Resume() {
+  // skills icons
   const skillIcons = [
     {
       name: "HTML",
@@ -93,6 +94,7 @@ function Resume() {
   };
 
   return (
+    // resume section
     <section className="container">
       <div className="row p-4">
         <h2 className="title col-12 m-5 font-weight-bold ">
@@ -119,7 +121,9 @@ function Resume() {
           </a>
         </div>
       </div>
+      {/* skills section */}
       <div>
+        {/* iconify icons */}
         <div className="row p-4">
           <h2 className="title col-12 m-5 font-weight-bold">
             <u>Skills</u>
@@ -133,6 +137,7 @@ function Resume() {
               <h5 className="skills">{icon.name}</h5>
             </div>
           ))}
+          {/* additional icons */}
           <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
             <img
               src={handlebarsIcon}

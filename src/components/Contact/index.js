@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 init(process.env.REACT_APP_USER_ID);
 
 function Contact() {
+  // error message function
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -43,6 +44,7 @@ function Contact() {
   const [messageEJS, setMessage] = useState("");
   const [emailSent, setEmailSent] = useState(false);
 
+  // emailjs function
   const submit = () => {
     if (nameEJS && emailEJS && messageEJS) {
       const serviceId = "service_m1r31zs";
@@ -73,6 +75,7 @@ function Contact() {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
+    // contact-form
     <section className="container">
       <div className="row">
         <div>
@@ -145,6 +148,7 @@ function Contact() {
           )}
         </div>
 
+        {/* Love to hear from you section */}
         <div className="col-xs-12 col-md-4 contact-div rounded mt-5 d-flex align-items-center">
           <p>
             I'd love to hear from you! I am eager to join a collaborative team

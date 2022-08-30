@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "../Card";
 
 const Projects = () => {
+  // projects array
   const projects = [
     {
       title: "Sip Happens",

@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
+// information to render for each individual project
 const ProjectCard = (props) => {
   const project = props.project;
   return (
@@ -19,12 +20,7 @@ const ProjectCard = (props) => {
         <div className="project-text">
           <h2>
             {project.title}{" "}
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              // className="btn contact-icons"
-            >
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
               <Icon
                 icon="akar-icons:github-fill"
                 color="#22577a"
