@@ -65,6 +65,7 @@ header nav ul {
 
 .links:hover {
   color: var(--sext-color);
+  text-decoration: none;
 }
 
 /* Footer styles */

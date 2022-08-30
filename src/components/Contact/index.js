@@ -129,12 +129,19 @@ function Contact() {
                 <p className="error-text">{errorMessage}</p>
               </div>
             )}
-            <Button variant="outline-success" type="submit" onClick={submit}>
+            <Button
+              variant="outline-success"
+              className="m-2"
+              type="submit"
+              onClick={submit}
+            >
               Submit
             </Button>
           </Form>
           {isVisible && emailSent && (
-            <span>Thanks for your message! I'll be in touch soon!</span>
+            <span style={{ color: "#38a3a5" }} className="m-2">
+              Thanks for your message! I'll be in touch soon!
+            </span>
           )}
         </div>
 

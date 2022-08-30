@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
+import handlebarsIcon from "../../assets/HandlebarsIcon.png";
+import mongoose from "../../assets/mongoose.png";
 
 function Resume() {
   const skillIcons = [
@@ -59,11 +61,6 @@ function Resume() {
       alt: "MongoDB",
     },
     {
-      name: "Handlebars.js",
-      src: "logos:handlebars",
-      alt: "Handlebars.js",
-    },
-    {
       name: "jQuery",
       src: "bxl:jquery",
       alt: "jQuery",
@@ -82,6 +79,13 @@ function Resume() {
       name: "REST API",
       src: "dashicons:rest-api",
       alt: "REST API",
+    },
+  ];
+  const handlebars = [
+    {
+      name: "Handlebars",
+      src: require("../../assets/HandlebarsIcon.png"),
+      alt: "Handlebars",
     },
   ];
   const [isHovering, setIsHovering] = useState(false);
@@ -105,6 +109,7 @@ function Resume() {
             href="https://drive.google.com/file/d/1mNBA36PA3K8fG-fkU3Upj5m3bFQbkIGx/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
           >
             <Icon
               icon="cil:contact"
@@ -116,9 +121,7 @@ function Resume() {
               className="resume-icon p-2 rounded"
             />
 
-            {isHovering && (
-              <h4 className="links text-center mt-4">My Resume</h4>
-            )}
+            {isHovering && <h4 className="text-center mt-4">My Resume</h4>}
           </a>
         </div>
       </div>
@@ -128,11 +131,26 @@ function Resume() {
             <u>Skills</u>
           </h2>
           {skillIcons.map((icon) => (
-            <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
+            <div
+              className="col-xm-12 col-sm-6 col-md-4 col-lg-2"
+              key={icon.name}
+            >
               <Icon icon={icon.src} color="#22577a" width="75" height="75" />
               <h5 className="skills">{icon.name}</h5>
             </div>
           ))}
+          <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
+            <img
+              src={handlebarsIcon}
+              alt="handlebars"
+              style={{ width: "75px" }}
+            ></img>
+            <h5 className="skills">Handlebars</h5>
+          </div>
+          <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
+            <img src={mongoose} alt="mongoose" style={{ width: "75px" }}></img>
+            <h5 className="skills">Mongoose</h5>
+          </div>
         </div>
       </div>
     </section>

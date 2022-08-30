@@ -28,15 +28,6 @@ function Footer() {
       alt: "https://github.com/nmsiegel1",
     },
   ];
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
 
   return (
     <footer className="" id="footer">
@@ -47,6 +38,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn contact-icons"
+            key={icon.name}
           >
             <Icon icon={icon.src} color="#7dd181" width="40" height="40" />
           </a>
