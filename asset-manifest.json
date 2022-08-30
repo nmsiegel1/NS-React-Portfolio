@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/NS-React-Portfolio/static/css/main.b30543ef.css",
+    "main.js": "/NS-React-Portfolio/static/js/main.359f9c81.js",
+    "static/js/787.a2cb61a6.chunk.js": "/NS-React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Mountains.jpeg": "/NS-React-Portfolio/static/media/Mountains.89c0d9d1638b080c9adb.jpeg",
+    "static/media/Sora-Regular.ttf": "/NS-React-Portfolio/static/media/Sora-Regular.1e3d2959bad0cd8436f1.ttf",
+    "static/media/whatsfordinner.png": "/NS-React-Portfolio/static/media/whatsfordinner.b1fa5b5e611ff622a481.png",
+    "static/media/sipHappens.png": "/NS-React-Portfolio/static/media/sipHappens.9fc7eede51ccce185bef.png",
+    "static/media/HandlebarsIcon.png": "/NS-React-Portfolio/static/media/HandlebarsIcon.314933aa0972679948c3.png",
+    "static/media/codeQuiz.png": "/NS-React-Portfolio/static/media/codeQuiz.e89b566b44ddc09f1cd1.png",
+    "static/media/noteTaker.png": "/NS-React-Portfolio/static/media/noteTaker.497e4bd50f46c3dc5b1b.png",
+    "static/media/EmployeeTracker.png": "/NS-React-Portfolio/static/media/EmployeeTracker.dcdad372635aa40efefb.png",
+    "index.html": "/NS-React-Portfolio/index.html",
+    "main.b30543ef.css.map": "/NS-React-Portfolio/static/css/main.b30543ef.css.map",
+    "main.359f9c81.js.map": "/NS-React-Portfolio/static/js/main.359f9c81.js.map",
+    "787.a2cb61a6.chunk.js.map": "/NS-React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b30543ef.css",
+    "static/js/main.359f9c81.js"
+  ]
+}
