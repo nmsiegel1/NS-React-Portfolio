@@ -81,13 +81,7 @@ function Resume() {
       alt: "REST API",
     },
   ];
-  const handlebars = [
-    {
-      name: "Handlebars",
-      src: require("../../assets/HandlebarsIcon.png"),
-      alt: "Handlebars",
-    },
-  ];
+
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
