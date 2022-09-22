@@ -5,6 +5,15 @@ const Projects = () => {
   // projects array
   const projects = [
     {
+      title: "Carbon Footsteps",
+      subtitle: "MERN, GraphQL",
+      description:
+        "A MERN stack application is for an environmentally conscious user who wants to calculate their carbon footprint and learn more about how to offset their emissions in order to positively impact the world's climate.",
+      link: "https://carbon-footsteps.herokuapp.com/",
+      github: "https://github.com/nmsiegel1/carbon-footprint",
+      photo: require("../../assets/projects/carbonFootprint.png"),
+    },
+    {
       title: "Sip Happens",
       subtitle: "NODE.JS. SEQUELIZE, HEROKU, EXPRESS-SESSION",
       description:
@@ -30,15 +39,6 @@ const Projects = () => {
       link: "https://nmsiegel1.github.io/Whats-for-dinner/",
       github: "https://github.com/nmsiegel1/Whats-for-dinner",
       photo: require("../../assets/projects/whatsfordinner.png"),
-    },
-    {
-      title: "Code Quiz",
-      subtitle: "HTML, CSS, JAVASCRIPT",
-      description:
-        "A short quiz that tests a users knowlege about coding with a high scores page",
-      link: "https://nmsiegel1.github.io/Code-Quiz/",
-      github: "https://github.com/nmsiegel1/Code-Quiz",
-      photo: require("../../assets/projects/codeQuiz.png"),
     },
     {
       title: "Note Taker",
