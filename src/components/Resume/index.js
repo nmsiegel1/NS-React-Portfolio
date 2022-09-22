@@ -102,7 +102,7 @@ function Resume() {
         </h2>
         <div className="col-12 d-flex justify-content-center resume p-4">
           <a
-            href="https://drive.google.com/file/d/1mNBA36PA3K8fG-fkU3Upj5m3bFQbkIGx/view?usp=sharing"
+            href="https://docs.google.com/document/d/1lhs4lftMTUw8GcNoqUqT0kKUL-rHEOBP-NscJXEqeeI/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}

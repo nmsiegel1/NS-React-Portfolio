@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Carbon Footsteps",
       subtitle: "MERN, GraphQL",
       description:
-        "A MERN stack application is for an environmentally conscious user who wants to calculate their carbon footprint and learn more about how to offset their emissions in order to positively impact the world's climate.",
+        "A MERN stack application for an environmentally conscious user who wants to calculate their carbon footprint and learn more about how to offset their emissions in order to positively impact the world's climate.",
       link: "https://carbon-footsteps.herokuapp.com/",
       github: "https://github.com/nmsiegel1/carbon-footprint",
       photo: require("../../assets/projects/carbonFootprint.png"),
