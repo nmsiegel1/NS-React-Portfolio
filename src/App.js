@@ -28,7 +28,7 @@ function App() {
   return (
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      <main>
+      <main className="height">
         <Page />
       </main>
       <Footer />

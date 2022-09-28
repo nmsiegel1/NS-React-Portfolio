@@ -12,7 +12,7 @@ function Header({ currentPage, handlePageChange }) {
         <ul>
           {pageName.map((pageName) => {
             return (
-              <li className="links" key={pageName}>
+              <li className="links" style={{ fontSize: "20px" }} key={pageName}>
                 <a
                   href={`#{pageName}`}
                   onClick={() => handlePageChange(pageName)}

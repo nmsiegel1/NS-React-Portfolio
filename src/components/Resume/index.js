@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import handlebarsIcon from "../../assets/HandlebarsIcon.png";
 import mongoose from "../../assets/mongoose.png";
+import resume from "../../assets/Nina-Siegel-Resume.pdf";
 
 function Resume() {
   // skills icons
@@ -62,6 +63,16 @@ function Resume() {
       alt: "MongoDB",
     },
     {
+      name: "GraphQL",
+      src: "akar-icons:graphql-fill",
+      alt: "GraphQL",
+    },
+    {
+      name: "Apollo",
+      src: "simple-icons:apollographql",
+      alt: "Apollo",
+    },
+    {
       name: "jQuery",
       src: "bxl:jquery",
       alt: "jQuery",
@@ -95,16 +106,15 @@ function Resume() {
 
   return (
     // resume section
-    <section className="container">
+    <section className="container height">
       <div className="row p-4">
-        <h2 className="title col-12 m-5 font-weight-bold ">
-          <u>Resume</u>
-        </h2>
+        <h2 className="title col-12 m-5 font-weight-bold ">Resume</h2>
         <div className="col-12 d-flex justify-content-center resume p-4">
           <a
-            href="https://docs.google.com/document/d/1lhs4lftMTUw8GcNoqUqT0kKUL-rHEOBP-NscJXEqeeI/edit?usp=sharing"
+            href={resume}
             target="_blank"
             rel="noopener noreferrer"
+            download="Nina-Siegel-Resume"
             style={{ textDecoration: "none" }}
           >
             <Icon
@@ -114,7 +124,7 @@ function Resume() {
               color="#22577a"
               width="200"
               height="200"
-              className="resume-icon p-2 rounded"
+              className="resume-icon p-2 mb-4 rounded"
             />
 
             {isHovering && <h4 className="text-center mt-4">My Resume</h4>}
@@ -125,16 +135,14 @@ function Resume() {
       <div>
         {/* iconify icons */}
         <div className="row p-4">
-          <h2 className="title col-12 m-5 font-weight-bold">
-            <u>Skills</u>
-          </h2>
+          <h2 className="title col-12 m-5 font-weight-bold">Skills</h2>
           {skillIcons.map((icon) => (
             <div
               className="col-xm-12 col-sm-6 col-md-4 col-lg-2"
               key={icon.name}
             >
               <Icon icon={icon.src} color="#22577a" width="75" height="75" />
-              <h5 className="skills">{icon.name}</h5>
+              <h5 className="skills p-2">{icon.name}</h5>
             </div>
           ))}
           {/* additional icons */}

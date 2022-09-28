@@ -36,6 +36,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 9999;
+  height: 10vh;
 }
 
 header h2 {
@@ -73,10 +74,19 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   background-color: var(--secondary-color);
   padding-top: 7px;
   color: var(--quat-color);
+  height: 10vh;
+  justify-content: center;
+}
+
+.copyright {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .contact-icons {
@@ -85,6 +95,10 @@ footer {
 }
 .contact-icons:hover {
   box-shadow: 0 0 5px 5px var(--sext-color);
+}
+
+.height {
+  min-height: 86vh;
 }
 
 /* About styles */

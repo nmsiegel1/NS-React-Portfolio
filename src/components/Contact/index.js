@@ -79,9 +79,7 @@ function Contact() {
     <section className="container">
       <div className="row">
         <div>
-          <h2 className="title m-5">
-            <u>Contact me</u>
-          </h2>
+          <h2 className="title m-5">Contact me</h2>
         </div>
         <div className="col-xs-12 col-md-8 mb-4">
           <Form

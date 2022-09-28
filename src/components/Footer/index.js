@@ -30,7 +30,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="" id="footer">
+    <footer id="footer">
       <div className="d-flex justify-content-around mx-20">
         {contactIcons.map((icon) => (
           <a
@@ -44,8 +44,8 @@ function Footer() {
           </a>
         ))}
       </div>
-      <div className="mb-2 mt-2">
-        <h5>Nina Siegel</h5>
+      <div className="mb-2 mt-2 copyright" style={{ fontSize: "10px" }}>
+        <h5 style={{ fontSize: "12px" }}>Nina Siegel</h5>
         &copy; 2022
       </div>
     </footer>
