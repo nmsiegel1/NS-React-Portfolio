@@ -14,7 +14,9 @@ const ProjectCard = (props) => {
               style={{
                 backgroundImage: `url(${project.photo})`,
               }}
-            ></div>
+            >
+              {/* <img src={project.photo} alt="project gif"></img> */}
+            </div>
           </a>
         </div>
         <div className="project-text">
