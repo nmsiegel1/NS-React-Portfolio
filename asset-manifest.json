@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/NS-React-Portfolio/static/css/main.b30543ef.css",
-    "main.js": "/NS-React-Portfolio/static/js/main.8c346b56.js",
+    "main.css": "/NS-React-Portfolio/static/css/main.1f8d829f.css",
+    "main.js": "/NS-React-Portfolio/static/js/main.aeec067e.js",
     "static/js/787.a2cb61a6.chunk.js": "/NS-React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/bookSearch.gif": "/NS-React-Portfolio/static/media/bookSearch.abf7a9753185cb124014.gif",
+    "static/media/shop.gif": "/NS-React-Portfolio/static/media/shop.bb93f2ff1c0af1ab632e.gif",
+    "static/media/whatsForDinner.gif": "/NS-React-Portfolio/static/media/whatsForDinner.3a2b698ead019b90b168.gif",
+    "static/media/carbonFootsteps2.gif": "/NS-React-Portfolio/static/media/carbonFootsteps2.0280e60dae2191cabbc9.gif",
+    "static/media/sipHappens.gif": "/NS-React-Portfolio/static/media/sipHappens.d4b7769e1ce47a733c6c.gif",
     "static/media/Mountains.jpeg": "/NS-React-Portfolio/static/media/Mountains.89c0d9d1638b080c9adb.jpeg",
+    "static/media/techBlog.gif": "/NS-React-Portfolio/static/media/techBlog.7c3d1c096d4f99ab6643.gif",
     "static/media/Sora-Regular.ttf": "/NS-React-Portfolio/static/media/Sora-Regular.1e3d2959bad0cd8436f1.ttf",
-    "static/media/whatsfordinner.png": "/NS-React-Portfolio/static/media/whatsfordinner.b1fa5b5e611ff622a481.png",
-    "static/media/sipHappens.png": "/NS-React-Portfolio/static/media/sipHappens.9fc7eede51ccce185bef.png",
+    "static/media/Nina-Siegel-Resume.pdf": "/NS-React-Portfolio/static/media/Nina-Siegel-Resume.eeef54f4de3309f7975c.pdf",
     "static/media/HandlebarsIcon.png": "/NS-React-Portfolio/static/media/HandlebarsIcon.314933aa0972679948c3.png",
-    "static/media/noteTaker.png": "/NS-React-Portfolio/static/media/noteTaker.497e4bd50f46c3dc5b1b.png",
-    "static/media/EmployeeTracker.png": "/NS-React-Portfolio/static/media/EmployeeTracker.dcdad372635aa40efefb.png",
     "index.html": "/NS-React-Portfolio/index.html",
-    "main.b30543ef.css.map": "/NS-React-Portfolio/static/css/main.b30543ef.css.map",
-    "main.8c346b56.js.map": "/NS-React-Portfolio/static/js/main.8c346b56.js.map",
+    "main.1f8d829f.css.map": "/NS-React-Portfolio/static/css/main.1f8d829f.css.map",
+    "main.aeec067e.js.map": "/NS-React-Portfolio/static/js/main.aeec067e.js.map",
     "787.a2cb61a6.chunk.js.map": "/NS-React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b30543ef.css",
-    "static/js/main.8c346b56.js"
+    "static/css/main.1f8d829f.css",
+    "static/js/main.aeec067e.js"
   ]
 }
