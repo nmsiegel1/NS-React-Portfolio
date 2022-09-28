@@ -150,8 +150,9 @@ function Contact() {
         <div className="col-xs-12 col-md-4 contact-div rounded mt-5 d-flex align-items-center">
           <p>
             I'd love to hear from you! I am eager to join a collaborative team
-            where I can continue honing my skills. Please fill out this form or
-            email me at{" "}
+            where I can continue to learn and grow. <br />
+            <br />
+            Please fill out this form or email me at{" "}
             <a
               href="mailto: siegel.nina.m@gmail.com"
               target="_blank"
@@ -160,7 +161,9 @@ function Contact() {
             >
               siegel.nina.m@gmail.com
             </a>
-            . Want to see more? Checkout my GitHub{" "}
+            .<br />
+            <br />
+            Want to see more? Checkout my GitHub{" "}
             <a
               href="https://github.com/nmsiegel1"
               target="_blank"
