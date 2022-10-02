@@ -76,7 +76,7 @@ function Contact() {
 
   return (
     // contact-form
-    <section className="container">
+    <section className="container lg-screens">
       <div className="row">
         <div>
           <h2 className="title m-5">Contact me</h2>

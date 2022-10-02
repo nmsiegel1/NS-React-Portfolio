@@ -40,7 +40,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 9999;
-  height: 15vh;
+  height: 10vh;
 }
 
 header h2 {
@@ -102,7 +102,7 @@ footer {
 }
 
 .height {
-  min-height: 86vh;
+  min-height: 80vh;
 }
 
 /* About styles */
@@ -243,6 +243,11 @@ footer {
 }
 
 /* media query for 980px and smaller */
+@media screen and (min-width: 1600px) {
+  .lg-screens {
+    max-width: 85% !important;
+  }
+}
 @media screen and (min-width: 1300px) {
   header h1 {
     font-size: 50px;

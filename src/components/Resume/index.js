@@ -106,7 +106,7 @@ function Resume() {
 
   return (
     // resume section
-    <section className="container height">
+    <section className="container lg-screens">
       <div className="row p-4">
         <h2 className="title col-12 m-5 font-weight-bold ">Resume</h2>
         <div className="col-12 d-flex justify-content-center resume p-4">

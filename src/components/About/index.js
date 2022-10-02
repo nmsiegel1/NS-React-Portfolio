@@ -3,7 +3,7 @@ import profilePic from "../../assets/projects/Mountains.jpeg";
 
 function About() {
   return (
-    <section className="container">
+    <section className="container lg-screens">
       <div className="row">
         <h3 className="mt-5 mb-3 intro">Hi I'm Nina, a chef turned coder!</h3>
       </div>

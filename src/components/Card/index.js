@@ -5,12 +5,12 @@ import { Icon } from "@iconify/react";
 const ProjectCard = (props) => {
   const project = props.project;
   return (
-    <section className="container project-div" key={project.title}>
+    <section className="container project-div rounded" key={project.title}>
       <div className="row">
         <div className="photo-div">
           <a href={project.link} target="_blank" rel="noreferrer">
             <div
-              className="project-img"
+              className="project-img rounded"
               style={{
                 backgroundImage: `url(${project.photo})`,
               }}

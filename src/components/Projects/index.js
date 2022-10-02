@@ -63,7 +63,7 @@ const Projects = () => {
 
   return (
     <main>
-      <div className="container">
+      <div className="container lg-screens" style={{ margin: "auto" }}>
         <div className="row">
           <h2 className="title m-5 font-weight-bold">My Portfolio</h2>
         </div>
