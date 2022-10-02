@@ -209,6 +209,13 @@ footer {
 .skills {
   color: var(--quint-color);
   font-size: 15px;
+  text-align: center;
+}
+
+.icons {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
 
 /* contact styles */

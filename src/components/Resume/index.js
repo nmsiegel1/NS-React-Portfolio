@@ -126,8 +126,6 @@ function Resume() {
               height="200"
               className="resume-icon p-2 mb-4 rounded"
             />
-
-            {isHovering && <h4 className="text-center mt-4">My Resume</h4>}
           </a>
         </div>
       </div>
@@ -141,12 +139,18 @@ function Resume() {
               className="col-xm-12 col-sm-6 col-md-4 col-lg-2"
               key={icon.name}
             >
-              <Icon icon={icon.src} color="#22577a" width="75" height="75" />
+              <Icon
+                icon={icon.src}
+                color="#22577a"
+                width="75"
+                height="75"
+                className="icons"
+              />
               <h5 className="skills p-2">{icon.name}</h5>
             </div>
           ))}
           {/* additional icons */}
-          <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
+          <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2 icons">
             <img
               src={handlebarsIcon}
               alt="handlebars"
@@ -154,7 +158,7 @@ function Resume() {
             ></img>
             <h5 className="skills">Handlebars</h5>
           </div>
-          <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2">
+          <div className="col-xm-12 col-sm-6 col-md-4 col-lg-2 icons">
             <img src={mongoose} alt="mongoose" style={{ width: "75px" }}></img>
             <h5 className="skills">Mongoose</h5>
           </div>
