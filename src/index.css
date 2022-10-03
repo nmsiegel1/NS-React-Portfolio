@@ -192,6 +192,16 @@ footer {
   box-shadow: 0 0 5px 5px var(--secondary-color);
 }
 
+.pill {
+  background-color: var(--quint-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.pills {
+  justify-content: center !important;
+  align-items: center;
+}
+
 /* resume styles */
 .resume {
   border-bottom: 3px solid var(--sext-color);
