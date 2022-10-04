@@ -40,7 +40,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 9999;
-  height: 10vh;
+  height: 100px;
 }
 
 header h2 {
@@ -82,7 +82,7 @@ footer {
   background-color: var(--secondary-color);
   padding-top: 7px;
   color: var(--quat-color);
-  height: 10vh;
+  height: 75px;
   justify-content: center;
 }
 
@@ -102,7 +102,7 @@ footer {
 }
 
 .height {
-  min-height: 80vh;
+  min-height: calc(100vh - 175px);
 }
 
 /* About styles */
@@ -142,9 +142,6 @@ footer {
 .photo-div,
 .project-text {
   flex: 100%;
-}
-
-.photo-div {
 }
 
 .project-img {
@@ -290,9 +287,66 @@ footer {
   }
 }
 
+@media screen and (max-width: 823px) {
+  header h2 {
+    font-size: 30px;
+  }
+
+  .links {
+    font-size: 15px !important;
+  }
+}
+
 /* mediaquery for tablets and smaller styles for screens 768px and smaller */
 @media screen and (max-width: 768px) {
   .contact-div {
-    margin-bottom: 3rem;
+    margin-bottom: 3rem !important;
+    max-width: 90% !important;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .about-div {
+    max-width: 90% !important;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  header h2 {
+    font-size: 20px;
+  }
+
+  .links {
+    font-size: 12px !important;
+    max-width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  header {
+    height: 125px;
+  }
+
+  footer {
+    height: 115px;
+  }
+
+  .height {
+    min-height: calc(100vh - 240px);
+  }
+}
+
+@media screen and (max-width: 307px) {
+  header h2 {
+    font-size: 15px;
+  }
+
+  .links {
+    font-size: 10px !important;
+    max-width: 90% !important;
   }
 }

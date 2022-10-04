@@ -15,7 +15,7 @@ function About() {
             alt="Nina Siegel"
           ></img>
         </div>
-        <div className="col-xs-12 col-md-6 about-div rounded d-flex align-self-center">
+        <div className="col-xs-12 col-md-6 about-div mb-3 rounded d-flex align-items-center justify-content-center">
           <p>
             I am a full stack web developer and chef experienced in making and
             shipping code and sandwiches in an agile environment. <br />

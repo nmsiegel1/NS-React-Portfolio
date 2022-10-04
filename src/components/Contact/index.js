@@ -36,7 +36,6 @@ function Contact() {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formState);
   }
 
   const [nameEJS, setName] = useState("");
@@ -56,17 +55,13 @@ function Contact() {
         emailEJS,
         messageEJS,
       };
-      emailjs
-        .send(serviceId, templateId, templateParams, userId)
-        .then((response) => console.log(response))
-        .then((error) => console.log(error));
+      emailjs.send(serviceId, templateId, templateParams, userId);
 
       setName("");
       setEmail("");
       setMessage("");
       setEmailSent(true);
       setIsVisible(true);
-      console.log("Email sent!");
     } else {
       alert("Please fill in all fields.");
     }
