@@ -12,7 +12,7 @@ const Projects = () => {
         "A MERN stack application for an environmentally conscious user who wants to calculate their carbon footprint and learn more about how to offset their emissions in order to positively impact the world's climate.",
       link: "https://carbon-footsteps.herokuapp.com/",
       github: "https://github.com/nmsiegel1/carbon-footprint",
-      photo: require("../../assets/projects/carbonFootsteps2.gif"),
+      photo: require("../../assets/projects/carbonFootsteps-lg.gif"),
     },
     {
       title: "Sip Happens",
@@ -21,7 +21,7 @@ const Projects = () => {
         "A wine and food pairing app that allows the user to view seasonal wine and food pairings and upvote or comment on the recommended pairings if logged in. Created by a team of 4 people.",
       link: "https://sip-happens-unc.herokuapp.com/",
       github: "https://github.com/nmsiegel1/Sip-Happens",
-      photo: require("../../assets/projects/sipHappens.gif"),
+      photo: require("../../assets/projects/sipHappens-lg.gif"),
     },
     {
       title: "Book Search Engine",
@@ -30,7 +30,7 @@ const Projects = () => {
         "This is a MERN stack web application that allows a user to search for books sourced by the Google Books API and save them with their user information. Built with React, MongoDB, Express.js, GraphQL and Apollo Server",
       link: "https://ns-book-search-engine.herokuapp.com/",
       github: "https://github.com/nmsiegel1/NS-Book-Search-Engine",
-      photo: require("../../assets/projects/bookSearch.gif"),
+      photo: require("../../assets/projects/bookSearch-lg.gif"),
     },
     {
       title: "Shop-Shop",
@@ -46,7 +46,7 @@ const Projects = () => {
         "This is a MERN stack e-commerce application that allows the user to shop for products and checkout with Stripe. Made with React, MongoDB, Express.js, Node.js, GraphQL and organized with global state.",
       link: "https://ns-shop-shop.herokuapp.com/",
       github: "https://github.com/nmsiegel1/NS-shop-shop",
-      photo: require("../../assets/projects/shop.gif"),
+      photo: require("../../assets/projects/shop-lg.gif"),
     },
     {
       title: "The Tech Blog",
@@ -55,7 +55,7 @@ const Projects = () => {
         "A full stack blog application for developers to write posts about the tech world and comment on each others posts.",
       link: "https://ns-tech-blog.herokuapp.com/",
       github: "https://github.com/nmsiegel1/NS-Tech-Blog",
-      photo: require("../../assets/projects/techBlog.gif"),
+      photo: require("../../assets/projects/techBlog-xl.gif"),
     },
     {
       title: "What's For Dinner?",
@@ -64,7 +64,7 @@ const Projects = () => {
         "A recipe finder app made with a third party API created by a team of four. Includes a search page, random recipe generator and favorites page.",
       link: "https://nmsiegel1.github.io/Whats-for-dinner/",
       github: "https://github.com/nmsiegel1/Whats-for-dinner",
-      photo: require("../../assets/projects/whatsForDinner.gif"),
+      photo: require("../../assets/projects/whatsForDinner-lg.gif"),
     },
   ];
 
@@ -82,7 +82,7 @@ const Projects = () => {
         </div>
         <div className="row">
           {projects.map((project) => (
-            <div className="col-xs-12 col-md-6" key={project.title}>
+            <div className="col-12" key={project.title}>
               <section className="container project-div rounded">
                 <div className="row">
                   <div className="photo-div">
@@ -92,9 +92,7 @@ const Projects = () => {
                         style={{
                           backgroundImage: `url(${project.photo})`,
                         }}
-                      >
-                        {/* <img src={project.photo} alt="project gif"></img> */}
-                      </div>
+                      ></div>
                     </a>
                   </div>
                   <div className="project-text">
@@ -116,8 +114,11 @@ const Projects = () => {
                     </h2>
                     <div className="row pills">
                       {project.subtitle.map((skill, index) => (
-                        <div className="col mb-3 text-center">
-                          <Badge pill bg="variant" className="pill" key={index}>
+                        <div
+                          className="col mb-3 text-center"
+                          key={skill + index}
+                        >
+                          <Badge pill bg="variant" className="pill">
                             {skill}
                           </Badge>{" "}
                         </div>
