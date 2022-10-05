@@ -9,28 +9,31 @@ const Projects = () => {
       title: "Carbon Footsteps",
       subtitle: ["MONGODB", "EXPRESS.JS", "REACT", "NODE.JS", "GRAPHQL"],
       description:
-        "A MERN stack application for an environmentally conscious user who wants to calculate their carbon footprint and learn more about how to offset their emissions in order to positively impact the world's climate.",
+        "A MERN stack application for an environmentally conscious user who wants to calculate their carbon footprint and learn more about how to offset their emissions in order to positively impact the world's climate. The user is first provided with information about global footprint averages. Once logged in, the user can calculate their carbon footprint based on their usage infromation and make pledges to reduce thier footprint. The user can come back and mark pledges as complete once finished.",
       link: "https://carbon-footsteps.herokuapp.com/",
       github: "https://github.com/nmsiegel1/carbon-footprint",
-      photo: require("../../assets/projects/carbonFootsteps-lg.gif"),
+      gif: require("../../assets/projects/carbonFootsteps-lg.gif"),
+      photo: require("../../assets/projects/carbonFootsteps-lg.png"),
     },
     {
       title: "Sip Happens",
       subtitle: ["NODE.JS", "SEQUELIZE", "HEROKU", "EXPRESS-SESSION"],
       description:
-        "A wine and food pairing app that allows the user to view seasonal wine and food pairings and upvote or comment on the recommended pairings if logged in. Created by a team of 4 people.",
+        "A full stack wine and food pairing application that allows the user to view seasonal wine and food pairings and upvote or comment on the recommended pairings if logged in. Lead developer for a team of 4 people primarily responsible for the back end.",
       link: "https://sip-happens-unc.herokuapp.com/",
       github: "https://github.com/nmsiegel1/Sip-Happens",
-      photo: require("../../assets/projects/sipHappens-lg.gif"),
+      gif: require("../../assets/projects/sipHappens-lg.gif"),
+      photo: require("../../assets/projects/sipHappens-lg.png"),
     },
     {
       title: "Book Search Engine",
       subtitle: ["MONGODB", "EXPRESS.JS", "REACT", "NODE.JS", "GRAPHQL"],
       description:
-        "This is a MERN stack web application that allows a user to search for books sourced by the Google Books API and save them with their user information. Built with React, MongoDB, Express.js, GraphQL and Apollo Server",
+        "This is a MERN stack web application that allows a user to search for books sourced by the Google Books API and save them with their user information. The user can come back and see their saved books at any time and delete them if no longer interested.",
       link: "https://ns-book-search-engine.herokuapp.com/",
       github: "https://github.com/nmsiegel1/NS-Book-Search-Engine",
-      photo: require("../../assets/projects/bookSearch-lg.gif"),
+      gif: require("../../assets/projects/bookSearch-lg.gif"),
+      photo: require("../../assets/projects/bookSearch-lg.png"),
     },
     {
       title: "Shop-Shop",
@@ -43,28 +46,31 @@ const Projects = () => {
         "GLOBAL STATE",
       ],
       description:
-        "This is a MERN stack e-commerce application that allows the user to shop for products and checkout with Stripe. Made with React, MongoDB, Express.js, Node.js, GraphQL and organized with global state.",
+        "This is a MERN stack e-commerce application that allows the user to shop for products and checkout with Stripe. The user can view products by category or individually, update their cart as needed and view order history.",
       link: "https://ns-shop-shop.herokuapp.com/",
       github: "https://github.com/nmsiegel1/NS-shop-shop",
-      photo: require("../../assets/projects/shop-lg.gif"),
+      gif: require("../../assets/projects/shop-lg.gif"),
+      photo: require("../../assets/projects/shop-lg.png"),
     },
     {
       title: "The Tech Blog",
       subtitle: ["NODE.JS", "SEQUELIZE", "HEROKU", "EXPRESS-SESSION"],
       description:
-        "A full stack blog application for developers to write posts about the tech world and comment on each others posts.",
+        "A full stack blog application for developers to write posts about the tech world and comment on each others posts. The user can view all post on the main page or select an individual post to comment. The user may write a new post or see their previous posts in the dashboard.",
       link: "https://ns-tech-blog.herokuapp.com/",
       github: "https://github.com/nmsiegel1/NS-Tech-Blog",
-      photo: require("../../assets/projects/techBlog-xl.gif"),
+      gif: require("../../assets/projects/techBlog-xl.gif"),
+      photo: require("../../assets/projects/techBlog-lg.png"),
     },
     {
       title: "What's For Dinner?",
       subtitle: ["HTML", "CSS", "JAVASCRIPT", "BULMA", "THIRD PARTY API'S"],
       description:
-        "A recipe finder app made with a third party API created by a team of four. Includes a search page, random recipe generator and favorites page.",
+        "A recipe finder app made with a third party API. The user may search for a recipe or click the dice button to recieve a random recipe. You may save recipes to your favorites list which can be viewed or deleted any time. The lead developer for a team of 4 primarily responsible for JavaScript.",
       link: "https://nmsiegel1.github.io/Whats-for-dinner/",
       github: "https://github.com/nmsiegel1/Whats-for-dinner",
-      photo: require("../../assets/projects/whatsForDinner-lg.gif"),
+      gif: require("../../assets/projects/whatsForDinner-lg.gif"),
+      photo: require("../../assets/projects/whatsForDinner-lg.png"),
     },
   ];
 
@@ -115,7 +121,7 @@ const Projects = () => {
                     <div className="row pills">
                       {project.subtitle.map((skill, index) => (
                         <div
-                          className="col mb-3 text-center"
+                          className="col m-3 text-center"
                           key={skill + index}
                         >
                           <Badge pill bg="variant" className="pill">

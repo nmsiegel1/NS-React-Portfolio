@@ -154,21 +154,19 @@ footer {
 
 .project-img:hover {
   box-shadow: 0 0 10px 10px var(--secondary-color);
+  /* background-image: url("var(--projectHover)") !important; */
 }
 
 .project-text {
-  padding: 25px 25px;
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: left;
   color: var(--secondary-color);
-}
-
-.project-text h2 {
-  font-size: 35px;
-  padding-bottom: 1px;
+  min-height: 300px;
+  max-width: 95% !important;
 }
 
 .project-text h3 {
@@ -177,9 +175,8 @@ footer {
 }
 
 .project-text p {
-  padding-bottom: 25px;
-  font-size: 15px;
-  line-height: 1.25;
+  font-size: 17px;
+  line-height: 1.5;
 }
 .github:hover {
   border-radius: 50%;
