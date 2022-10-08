@@ -72,6 +72,7 @@ const Projects = () => {
       gif: require("../../assets/projects/whatsForDinner-lg.gif"),
       photo: require("../../assets/projects/whatsForDinner-lg.png"),
     },
+    // comment
   ];
 
   return (
