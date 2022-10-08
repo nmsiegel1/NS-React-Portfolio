@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/NS-React-Portfolio/static/css/main.15d4dde8.css",
-    "main.js": "/NS-React-Portfolio/static/js/main.ed342db9.js",
+    "main.css": "/NS-React-Portfolio/static/css/main.3e19f0bc.css",
+    "main.js": "/NS-React-Portfolio/static/js/main.35a2c194.js",
     "static/js/787.a2cb61a6.chunk.js": "/NS-React-Portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/carbon-footsteps4.gif": "/NS-React-Portfolio/static/media/carbon-footsteps4.93611c39cfd75068878e.gif",
-    "static/media/bookSearch.gif": "/NS-React-Portfolio/static/media/bookSearch.abf7a9753185cb124014.gif",
-    "static/media/shop.gif": "/NS-React-Portfolio/static/media/shop.bb93f2ff1c0af1ab632e.gif",
-    "static/media/whatsForDinner.gif": "/NS-React-Portfolio/static/media/whatsForDinner.3a2b698ead019b90b168.gif",
-    "static/media/sipHappens.gif": "/NS-React-Portfolio/static/media/sipHappens.d4b7769e1ce47a733c6c.gif",
+    "static/media/carbonFootsteps-lg.gif": "/NS-React-Portfolio/static/media/carbonFootsteps-lg.93611c39cfd75068878e.gif",
+    "static/media/sipHappens-lg.gif": "/NS-React-Portfolio/static/media/sipHappens-lg.57af8d1d76a3cce211dc.gif",
+    "static/media/bookSearch-lg.gif": "/NS-React-Portfolio/static/media/bookSearch-lg.a4a563afbce219599b1c.gif",
+    "static/media/whatsForDinner-lg.gif": "/NS-React-Portfolio/static/media/whatsForDinner-lg.9be8c8bb02b845c9ad74.gif",
+    "static/media/shop-lg.gif": "/NS-React-Portfolio/static/media/shop-lg.bb93f2ff1c0af1ab632e.gif",
+    "static/media/techBlog-xl.gif": "/NS-React-Portfolio/static/media/techBlog-xl.bfe06ada26df359beae8.gif",
+    "static/media/sipHappens-lg.png": "/NS-React-Portfolio/static/media/sipHappens-lg.70f60764cb3a4402cddc.png",
+    "static/media/shop-lg.png": "/NS-React-Portfolio/static/media/shop-lg.c5b835037682ca85931f.png",
+    "static/media/bookSearch-lg.png": "/NS-React-Portfolio/static/media/bookSearch-lg.15b441d711ff7eecaf4c.png",
     "static/media/Mountains.jpeg": "/NS-React-Portfolio/static/media/Mountains.89c0d9d1638b080c9adb.jpeg",
-    "static/media/techBlog.gif": "/NS-React-Portfolio/static/media/techBlog.7c3d1c096d4f99ab6643.gif",
+    "static/media/carbonFootsteps-lg.png": "/NS-React-Portfolio/static/media/carbonFootsteps-lg.2eff9b0f396e34dea954.png",
+    "static/media/whatsForDinner-lg.png": "/NS-React-Portfolio/static/media/whatsForDinner-lg.a180ba4b812d3efc348f.png",
+    "static/media/techBlog-lg.png": "/NS-React-Portfolio/static/media/techBlog-lg.46b630890b3c29aed0ce.png",
     "static/media/Sora-Regular.ttf": "/NS-React-Portfolio/static/media/Sora-Regular.1e3d2959bad0cd8436f1.ttf",
     "static/media/Nina-Siegel-Resume.pdf": "/NS-React-Portfolio/static/media/Nina-Siegel-Resume.eeef54f4de3309f7975c.pdf",
     "static/media/HandlebarsIcon.png": "/NS-React-Portfolio/static/media/HandlebarsIcon.314933aa0972679948c3.png",
     "index.html": "/NS-React-Portfolio/index.html",
-    "main.15d4dde8.css.map": "/NS-React-Portfolio/static/css/main.15d4dde8.css.map",
-    "main.ed342db9.js.map": "/NS-React-Portfolio/static/js/main.ed342db9.js.map",
+    "main.3e19f0bc.css.map": "/NS-React-Portfolio/static/css/main.3e19f0bc.css.map",
+    "main.35a2c194.js.map": "/NS-React-Portfolio/static/js/main.35a2c194.js.map",
     "787.a2cb61a6.chunk.js.map": "/NS-React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15d4dde8.css",
-    "static/js/main.ed342db9.js"
+    "static/css/main.3e19f0bc.css",
+    "static/js/main.35a2c194.js"
   ]
 }
