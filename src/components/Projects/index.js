@@ -16,6 +16,16 @@ const Projects = () => {
       photo: require("../../assets/projects/carbonFootsteps-lg.png"),
     },
     {
+      title: "Crown Clothing",
+      subtitle: ["REACT", "FIREBASE", "FIRESTORE", "REDUX"],
+      description:
+        "This is an e-commerce application made with ReactJs, Firebase authentication and Firestore database.",
+      link: "https://euphonious-zuccutto-1165ba.netlify.app/shop",
+      github: "https://github.com/nmsiegel1/Crown-Clothing",
+      gif: require("../../assets/projects/shop-lg.gif"),
+      photo: require("../../assets/projects/crown-clothing.png"),
+    },
+    {
       title: "Sip Happens",
       subtitle: ["NODE.JS", "SEQUELIZE", "HEROKU", "EXPRESS-SESSION"],
       description:
@@ -34,23 +44,6 @@ const Projects = () => {
       github: "https://github.com/nmsiegel1/NS-Book-Search-Engine",
       gif: require("../../assets/projects/bookSearch-lg.gif"),
       photo: require("../../assets/projects/bookSearch-lg.png"),
-    },
-    {
-      title: "Shop-Shop",
-      subtitle: [
-        "MONGODB",
-        "EXPRESS.JS",
-        "REACT",
-        "NODE.JS",
-        "GRAPHQL",
-        "GLOBAL STATE",
-      ],
-      description:
-        "This is a MERN stack e-commerce application that allows the user to shop for products and checkout with Stripe. The user can view products by category or individually, update their cart as needed and view order history.",
-      link: "https://ns-shop-shop.herokuapp.com/",
-      github: "https://github.com/nmsiegel1/NS-shop-shop",
-      gif: require("../../assets/projects/shop-lg.gif"),
-      photo: require("../../assets/projects/shop-lg.png"),
     },
     {
       title: "The Tech Blog",
@@ -72,7 +65,6 @@ const Projects = () => {
       gif: require("../../assets/projects/whatsForDinner-lg.gif"),
       photo: require("../../assets/projects/whatsForDinner-lg.png"),
     },
-    // comment
   ];
 
   return (

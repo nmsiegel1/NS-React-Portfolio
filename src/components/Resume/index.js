@@ -43,6 +43,11 @@ function Resume() {
       alt: "React",
     },
     {
+      name: "React Native",
+      src: "tabler:brand-react-native",
+      alt: "React Native",
+    },
+    {
       name: "Bootstrap",
       src: "akar-icons:bootstrap-fill",
       alt: "Bootstrap",
@@ -76,6 +81,16 @@ function Resume() {
       name: "jQuery",
       src: "bxl:jquery",
       alt: "jQuery",
+    },
+    {
+      name: "Python",
+      src: "mdi:language-python",
+      alt: "Python",
+    },
+    {
+      name: "AWS",
+      src: "mdi:aws",
+      alt: "AWS",
     },
     {
       name: "Heroku",
